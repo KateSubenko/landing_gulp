@@ -1,0 +1,88 @@
+@import "vars";
+
+.comments {
+  background-image: url("../img/Section.png");
+
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 2.5rem;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection .swiper__content {
+  width: 90%;
+  background-color: white;
+  overflow: hidden;
+  padding: 2.5rem;
+  border-radius: 12px;
+}
+
+.swiper {
+  &__photo {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+  }
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__about {
+    width: 80%;
+  }
+  &__name {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: $font-Roboto;
+  }
+  &__who {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: $font-Roboto;
+    margin-top: 1rem;
+  }
+  &__text {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+    font-family: $font-Roboto;
+    line-height: 3rem;
+    margin-top: 1rem;
+  }
+  &__media {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 33px;
+    height: 33px;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 840px) {
+  .comments {
+    padding: 4rem 0;
+  }
+  .collection .swiper__content {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .comments {
+    padding: 5rem 0;
+  }
+  .collection .swiper__content {
+    width: 40%;
+  }
+}

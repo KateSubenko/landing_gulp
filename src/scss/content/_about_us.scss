@@ -1,0 +1,132 @@
+@import "vars";
+
+.about_us {
+  margin-top: 60px;
+  margin-bottom: 5rem;
+  &__title {
+    font-family: $font-Roboto;
+    font-weight: 400;
+    text-align: center;
+    &--red {
+      color: $red;
+      font-size: 2rem; //16px
+    }
+    &--big {
+      margin-top: 60px;
+      color: black;
+      font-size: 4.2rem;
+      text-transform: uppercase;
+    }
+  }
+  &__text {
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: center;
+    font-family: $font-Roboto;
+    color: #0e69af;
+    font-size: 3rem; //24px
+  }
+  &__item {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    &_title {
+      margin-top: 5.2rem;
+      font-size: 4rem;
+    }
+    &_text {
+      margin-top: 3rem;
+      font-size: 2.5rem;
+    }
+    &_button {
+      margin-top: 3.8rem;
+      font-size: 2rem;
+      padding: 15px 0;
+      width: 100%;
+      background-color: $red;
+      border-radius: 15px;
+      color: white;
+      font-family: $font-Roboto;
+      text-transform: uppercase;
+      box-shadow: 3px 4px 10px 0px #00000040;
+    }
+  }
+}
+.registration__block--2 {
+  display: none;
+}
+
+@media (min-width: 840px) {
+  .about_us {
+    margin-top: 100px;
+
+    &__text {
+      margin-top: 20px;
+      text-align: left;
+    }
+  }
+  .about_us__title--red {
+    text-align: left;
+  }
+  .registration__block--2 {
+    display: block;
+    margin-top: 0;
+    width: 42%;
+    border-radius: 25% 10% 42% 14%;
+  }
+  .about_us__item_button {
+    width: 60%;
+  }
+  .about_us__section {
+    width: 54%;
+  }
+  .about_us__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .background__wrapper {
+    height: 1200px;
+  }
+  .debit {
+    top: -280px;
+  }
+  .about_us__items {
+    display: flex;
+  }
+  .about_us__item {
+    width: 30%;
+    justify-content: space-between;
+  }
+  .about_us__items--center {
+    position: relative;
+    &:before {
+      content: "";
+      border-left: solid 2px #d81e05;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: -10%;
+      height: 100%;
+    }
+    &:after {
+      content: "";
+      border-left: solid 2px #d81e05;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      right: -110%;
+    }
+  }
+}
+
+
+@media (min-width: 1100px) {
+  
+}

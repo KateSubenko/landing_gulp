@@ -1,0 +1,62 @@
+@import "vars";
+
+.header {
+  position: fixed;
+  background: white;
+  z-index: 100;
+  top: 0;
+  &__content {
+    padding-bottom: 2rem;
+    margin-top: 18px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: none;
+  }
+}
+
+@media (min-width: 710px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+
+      width: 70%;
+      &-link {
+        text-decoration: none;
+        color: black;
+        font-family: $font-Roboto;
+        font-weight: 400;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 910px) {
+  .header {
+    &__nav {
+      width: 50%;
+      &-link {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1110px) {
+  .header {
+    &__nav {
+      width: 700px;
+      &-link {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

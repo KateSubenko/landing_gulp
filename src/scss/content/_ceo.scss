@@ -1,0 +1,194 @@
+@import "vars";
+
+.form__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ceo {
+  position: relative;
+  padding: 5.5rem 0;
+  background: linear-gradient(180deg, #d81e05 0%, #490900 100%);
+  margin: 0 auto;
+  text-align: center;
+
+  &__img {
+    width: 80vw;
+    position: relative;
+    z-index: 2;
+    height: auto;
+  }
+  &__text {
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    display: inline-block;
+    font-family: $font-Roboto;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 1rem;
+    background: #cc4238c4;
+    box-shadow: 4px 5px 6.8px 0px #00000040;
+  }
+}
+
+.background {
+  &__wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  position: relative;
+  top: -3rem;
+
+  background-image: url("../img/back1.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.debit {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   width: 90%;
+  &__title {
+    font-family: $font-Roboto;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__numbers {
+    font-family: $font-Montserrat;
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__subtitle {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-family: $font-Montserrat;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+  }
+  &__form {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 4rem 2.5rem;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 15.41px 40.45px 0px #0000000d;
+    &-button {
+      border-radius: 16px;
+      padding: 2rem 0;
+      width: 80%;
+      margin-top: 3rem;
+      background: linear-gradient(
+        90deg,
+        #c91c04 0%,
+        #d81e05 33.33%,
+        #4b0900 66.67%,
+        #4b0900 100%
+      );
+      font-family: $font-Montserrat;
+      font-weight: 500;
+
+      &--text {
+        font-size: 1.5rem;
+        padding-right: 0.5rem;
+      }
+      &--money {
+        font-size: 2rem;
+      }
+      font-family: $font-Montserrat;
+      color: #ffffff;
+      font-weight: 400;
+    }
+  }
+}
+.button__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  background-color: #d81e05 !important;
+}
+
+.irs--flat .irs-bar {
+  background-color: #d81e05 !important;
+  height: 4px !important;
+}
+
+.irs--flat .irs-line {
+  height: 4px !important;
+}
+.js-range-slider {
+  margin-top: 1rem;
+}
+.js-irs-1 {
+  margin-top: 1rem;
+}
+@media (min-width: 770px) {
+  .ceo__img {
+    width: 60vw;
+  }
+  .ceo__text {
+    padding: 2rem 3rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width: 840px) {
+  .form__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .debit__form {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .ceo__img {
+    width: 35vw;
+    position: relative;
+    right: 28%;
+  }
+  .ceo__text {
+    padding: 8rem 3rem;
+    line-height: 3rem;
+    padding-left: 8rem;
+    text-align: left;
+  }
+  .background {
+    width: 65%;
+    left: 35%;
+    top: -35rem;
+  }
+  .debit {
+    margin-top: 0;
+    position: relative;
+  }
+  .form__wrapper {
+  }
+}
+
+@media (min-width: 1100px) {
+  .form__wrapper {
+    width: 90% !important;
+  }
+}

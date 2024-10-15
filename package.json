@@ -1,0 +1,28 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "test for traffic devils",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kateryna Zubenko",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.79.1"
+  },
+  "dependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "intl-tel-input": "^24.5.0",
+    "nodemon": "^3.1.5"
+  }
+}

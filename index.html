@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>International telephone input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./dist/css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  </head>
+  <body>
+    <header class="header wrapper flex-around">
+      <div class="header__content flex-around">
+        <object data="logo.svg" type="image/svg+xml">
+          <img class="pointer" src="./dist/img/logo.svg" alt="logo" srcset="" />
+        </object>
+        <img
+          class="header__menu pointer"
+          src="./dist/img/menu.png"
+          alt="menu" />
+        <div class="header__nav">
+          <a class="header__nav-link" href="#">Informazioni</a>
+          <a class="header__nav-link" href="#">CEO</a>
+          <a class="header__nav-link" href="#">Iniziare a guadagnare subito</a>
+        </div>
+      </div>
+    </header>
+    <div class="registration content">
+      <p class="registration__p">
+        Investire 250 euro per raggiungere 5000 euro in una settimana vi sembra
+        impossibile? Con il Gruppo Generali potete fare ancora di più!
+      </p>
+      <div class="registration__block registration__block--1"></div>
+      <div class="container">
+        <div>
+          <form class="registration__form" id="lookup">
+            <input
+              class="registration__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="il suo nome" />
+            <input
+              class="registration__input"
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="il suo cog" />
+            <input
+              class="registration__input"
+              type="email"
+              placeholder="e-mail"
+              name="email"
+              id="email" />
+            <input
+              class="registration__input"
+              id="phone"
+              type="tel"
+              name="phone" />
+            <input
+              class="registration__button--submit"
+              type="submit"
+              class="btn"
+              value="registrati" />
+          </form>
+          <div class="alert alert-info" style="display: none"></div>
+          <div class="alert alert-error" style="display: none"></div>
+          <div class="registration__back"></div>
+        </div>
+      </div>
+    </div>
+    <div class="about_us content">
+      <div class="about_us__wrapper">
+        <div class="registration__block registration__block--2"></div>
+        <div class="about_us__section">
+          <h5 class="about_us__title about_us__title--red">IL NOSTRO SCOPO</h5>
+          <p class="about_us__text">
+            Siamo qui per promuovere lo sviluppo e la circolazione delle
+            persone, delle imprese e del Paese.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="about_us__title about_us__title--big">
+        Inizia a servire con noi
+      </h2>
+      <div class="about_us__items">
+        <div class="about_us__item">
+          <object data="file.svg" type="image/svg+xml">
+            <img class="" src="./dist/img/file.svg" alt="file" srcset="" />
+          </object>
+          <h1 class="about_us__item_title about_us__title">Registrazione</h1>
+          <p class="about_us__title about_us__item_text">
+            Compilare tutti i campi del modulo di registrazione sul sito web.
+          </p>
+          <button class="pointer about_us__item_button">INIZIARE</button>
+        </div>
+        <div class="about_us__item about_us__items--center">
+          <object data="person.svg" type="image/svg+xml">
+            <img class="" src="./dist/img/person.svg" alt="person" srcset="" />
+          </object>
+          <h1 class="about_us__item_title about_us__title">
+            Consultazione di esperti
+          </h1>
+          <p class="about_us__title about_us__item_text">
+            Dopo la registrazione, rispondere all'invito del Consulente di
+            supporto di Petrol Energia e seguire tutte le sue istruzioni.
+          </p>
+          <button class="pointer about_us__item_button">INIZIARE</button>
+        </div>
+        <div class="about_us__item">
+          <object data="tree.svg" type="image/svg+xml">
+            <img class="" src="./dist/img/tree.svg" alt="tree" srcset="" />
+          </object>
+          <h1 class="about_us__item_title about_us__title">Deposito</h1>
+          <p class="about_us__title about_us__item_text">
+            Dopo la verifica, è necessario depositare un minimo di 250 euro sul
+            conto dell'azionista.
+          </p>
+          <button class="pointer about_us__item_button">INIZIARE</button>
+        </div>
+      </div>
+    </div>
+    <div class="ceo">
+      <div class="content">
+        <img class="ceo__img" src="./dist/img/ceo_b.png" alt="ceo" />
+        <div class="background__wrapper">
+          <div class="background">
+            <p class="ceo__text">
+              Philippe Donnet, amministratore delegato di Generali, ha appena
+              festeggiato dieci anni in Italia e in un’intervista a “Repubblica”
+              spiega che bilancio trae dal nostro Paese: “In questi dieci anni
+              il mondo ha dovuto fare i conti con prove molto dure e questo ci
+              ha resi più capaci di gestire l’imprevedibile. L’Italia ha
+              resistito bene. Per quanto mi riguarda, tre anni fa sono diventato
+              cittadino italiano: perché ci tenevo a rimarcare un’adesione forte
+              ai valori e alla cultura di questo Paese”. Un’altra prova per
+              l’economia è stato il repentino rialzo dei tassi: “A mio parere è
+              improprio parlare oggi di tassi alti: quando ero teenager, i mutui
+              viaggiavano a due cifre percentuali. La vera anomalia è stata
+              vivere con tassi a zero per quindici anni. Oggi siamo in una
+              situazione normale. Per quel che riguarda il nostro gruppo,
+              abbiamo un business mix grazie al quale possiamo crescere in
+              qualsiasi ciclo economico”. La crescita dell’Italia è stimata
+              attorno allo 0,7 per cento: “Noi non avremo problemi ma per la
+              crescita si può fare meglio, in Italia e in Europa. Ritengo che in
+              Europa non ci sia abbastanza Europa, ma troppe tasse e troppe
+              norme, che si sovrappongono a quelle nazionali. Questo non aiuta
+              né le famiglie né le imprese: quindi abbassiamo le tasse,
+              riduciamo le norme e liberiamo le energie imprenditoriali”.
+            </p>
+          </div>
+          <div class="debit">
+            <h1 class="debit__title">Potencijal dobiti</h1>
+            <div class="form__wrapper content">
+              <form class="debit__form">
+                <input
+                  id="slider-month"
+                  type="text"
+                  class="js-range-slider"
+                  name="my_range"
+                  value="" />
+                <input
+                  id="slider-money"
+                  type="text"
+                  class="js-range-slider"
+                  name="my_range"
+                  value="" />
+                <button class="debit__form-button">
+                  <div class="button__text">
+                    <span class="debit__form-button--text">MOGUĆA DOBIT:</span>
+                    <span class="debit__form-button--money">€ 8600</span>
+                  </div>
+                </button>
+              </form>
+              <div>
+                <h3 class="debit__subtitle">UKUPNA DOBIT KORISNIKA:</h3>
+                <span class="debit__numbers">€ 128 567 000</span>
+                <h3 class="debit__subtitle">AKTIVNI KORISNICI:</h3>
+                <span class="debit__numbers">77 335</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comments">
+      <section class="collection">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper__content swiper-slide">
+              <div class="text-content">
+                <div class="swiper__header">
+                  <img
+                    class="swiper__photo"
+                    src="/dist/img/jeff_slider.png"
+                    alt="photo of person" />
+                  <div class="swiper__about">
+                    <h1 class="swiper__name">Jeff Bezos:</h1>
+                    <h2 class="swiper__who">
+                      Technologieunternehmer, Investor und Philanthrop
+                    </h2>
+                    <object data="logos_facebook.svg" type="image/svg+xml">
+                      <img
+                        class="pointer swiper__media"
+                        src="./dist/img/logos_facebook.svg"
+                        alt="facebook"
+                        srcset="" />
+                    </object>
+                  </div>
+                </div>
+
+                <p class="swiper__text">
+                  Dem Quantencomputing gehört die Zukunft. Ich übertreibe nicht,
+                  wenn ich sage, es wird alles verändern wird. Das
+                  Quantencomputing steht noch ganz am Anfang; nicht viele
+                  Menschen wissen davon, was bedeutet, dass nur sehr wenige es
+                  nutzen. Die wenigen, die es nutzen, treffen unglaublich kluge
+                  (und profitable) Entscheidungen.
+                </p>
+              </div>
+            </div>
+            <div class="swiper__content swiper-slide">
+              <div class="text-content">
+                <div class="swiper__header">
+                  <img
+                    class="swiper__photo"
+                    src="./dist/img/photo-2_slider.png"
+                    alt="photo of person" />
+                  <div class="swiper__about">
+                    <h1 class="swiper__name">Bill Gates:</h1>
+                    <h2 class="swiper__who">
+                      Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+                      Menschenfreund
+                    </h2>
+                    <object data="logos_facebook.svg" type="image/svg+xml">
+                      <img
+                        class="pointer swiper__media"
+                        src="./dist/img/logos_facebook.svg"
+                        alt="facebook"
+                        srcset="" />
+                    </object>
+                  </div>
+                </div>
+
+                <p class="swiper__text">
+                  Dem Quantencomputing gehört die Zukunft. Ich übertreibe nicht,
+                  wenn ich sage, es wird alles verändern wird. Das
+                  Quantencomputing steht noch ganz am Anfang; nicht viele
+                  Menschen wissen davon, was bedeutet, dass nur sehr wenige es
+                  nutzen. Die wenigen, die es nutzen, treffen unglaublich kluge
+                  (und profitable) Entscheidungen.
+                </p>
+              </div>
+            </div>
+            <div class="swiper__content swiper-slide">
+              <div class="text-content">
+                <div class="swiper__header">
+                  <img
+                    class="swiper__photo"
+                    src="./dist/img/photo-3_slider.png"
+                    alt="photo of person" />
+                  <div class="swiper__about">
+                    <h1 class="swiper__name">Bill Gates:</h1>
+                    <h2 class="swiper__who">
+                      Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+                      Menschenfreund
+                    </h2>
+                    <object data="logos_facebook.svg" type="image/svg+xml">
+                      <img
+                        class="pointer swiper__media"
+                        src="./dist/img/logos_facebook.svg"
+                        alt="facebook"
+                        srcset="" />
+                    </object>
+                  </div>
+                </div>
+
+                <p class="swiper__text">
+                  Dem Quantencomputing gehört die Zukunft. Ich übertreibe nicht,
+                  wenn ich sage, es wird alles verändern wird. Das
+                  Quantencomputing steht noch ganz am Anfang; nicht viele
+                  Menschen wissen davon, was bedeutet, dass nur sehr wenige es
+                  nutzen. Die wenigen, die es nutzen, treffen unglaublich kluge
+                  (und profitable) Entscheidungen.
+                </p>
+              </div>
+            </div>
+            <div class="swiper__content swiper-slide">
+              <div class="text-content">
+                <div class="swiper__header">
+                  <img
+                    class="swiper__photo"
+                    src="./dist/img/photo-4_slider.png"
+                    alt="photo of person" />
+                  <div class="swiper__about">
+                    <h1 class="swiper__name">Bill Gates:</h1>
+                    <h2 class="swiper__who">
+                      Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+                      Menschenfreund
+                    </h2>
+                    <object data="logos_facebook.svg" type="image/svg+xml">
+                      <img
+                        class="pointer swiper__media"
+                        src="./dist/img/logos_facebook.svg"
+                        alt="facebook"
+                        srcset="" />
+                    </object>
+                  </div>
+                </div>
+
+                <p class="swiper__text">
+                  Dem Quantencomputing gehört die Zukunft. Ich übertreibe nicht,
+                  wenn ich sage, es wird alles verändern wird. Das
+                  Quantencomputing steht noch ganz am Anfang; nicht viele
+                  Menschen wissen davon, was bedeutet, dass nur sehr wenige es
+                  nutzen. Die wenigen, die es nutzen, treffen unglaublich kluge
+                  (und profitable) Entscheidungen.
+                </p>
+              </div>
+            </div>
+            <div class="swiper__content swiper-slide">
+              <div class="text-content">
+                <div class="swiper__header">
+                  <img
+                    class="swiper__photo"
+                    src="./dist/img/photo-5_slider.png"
+                    alt="photo of person" />
+                  <div class="swiper__about">
+                    <h1 class="swiper__name">Bill Gates:</h1>
+                    <h2 class="swiper__who">
+                      Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+                      Menschenfreund
+                    </h2>
+                    <object data="logos_facebook.svg" type="image/svg+xml">
+                      <img
+                        class="pointer swiper__media"
+                        src="./dist/img/logos_facebook.svg"
+                        alt="facebook"
+                        srcset="" />
+                    </object>
+                  </div>
+                </div>
+
+                <p class="swiper__text">
+                  Dem Quantencomputing gehört die Zukunft. Ich übertreibe nicht,
+                  wenn ich sage, es wird alles verändern wird. Das
+                  Quantencomputing steht noch ganz am Anfang; nicht viele
+                  Menschen wissen davon, was bedeutet, dass nur sehr wenige es
+                  nutzen. Die wenigen, die es nutzen, treffen unglaublich kluge
+                  (und profitable) Entscheidungen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="shareholders content">
+      <h1 class="shareholders__title">Gli azionisti dell'azienda</h1>
+      <div class="shareholders__list">
+        <div class="shareholders__block">
+          <img
+            class="shareholders__img"
+            src="./dist/img/share_1.png"
+            alt="shareholder" />
+          <img
+            class="shareholders__img"
+            src="./dist/img/share_2.png"
+            alt="shareholder" />
+          <img
+            class="shareholders__img"
+            src="./dist/img/share_3.png"
+            alt="shareholder" />
+        </div>
+        <div class="shareholders__block shareholders__block--2">
+          <img
+            class="shareholders__img"
+            src="./dist/img/share_4.png"
+            alt="shareholder" />
+          <img
+            class="shareholders__img"
+            src="./dist/img/share_5.png"
+            alt="shareholder" />
+          <img
+            class="shareholders__img"
+            src="./dist/img/share_6.png"
+            alt="shareholder" />
+        </div>
+      </div>
+    </div>
+    <footer class="footer content">
+      <div class="footer-nav__list">
+        <a class="footer-nav__item" href="#">Mappa del sito</a>
+        <a class="footer-nav__item" href="#">Termini di utilizzo</a>
+        <a class="footer-nav__item" href="#">Avviso di accessibilità</a>
+        <a class="footer-nav__item" href="#">Gestione dei Cookie</a>
+        <a class="footer-nav__item" href="#"
+          >Politica sulla protezione dei dati e informativa sulla privacy</a
+        >
+        <a class="footer-nav__item" href="#">Avviso di frode Web e phishing</a>
+        <a class="footer-nav__item" href="#"
+          >Politica sui reclami – Australia</a
+        >
+      </div>
+      <object data="logo.svg" type="image/svg+xml">
+        <img
+          class="pointer footer__logo"
+          src="./dist/img/logo.svg"
+          alt="logo"
+          srcset="" />
+      </object>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        preferredCountries: ["us", "co", "in", "de"],
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+      });
+
+      const info = document.querySelector(".alert-info");
+      const error = document.querySelector(".alert-error");
+
+      function validateName(firstName, lastName) {
+        const namePattern = /^[a-zA-Z\s-]+$/;
+
+        if (!firstName || !lastName) {
+          return "First name and last name are required.";
+        }
+
+        if (!namePattern.test(firstName) || !namePattern.test(lastName)) {
+          return "Invalid first name or last name.";
+        }
+
+        return "Valid name.";
+      }
+
+      function validateEmail(email) {
+        const emailPattern =
+          /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        if (!email.match(emailPattern)) {
+          return "Invalid an email.";
+        }
+        return "Valid email.";
+      }
+
+      function process(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const lastname = document.getElementById("lastname").value;
+        const validationMessage = validateName(name, lastname);
+
+        if (validationMessage !== "Valid name.") {
+          error.style.display = "";
+          error.innerHTML = validationMessage;
+        }
+
+        const email = document.getElementById("email").value;
+
+        const validationEmail = validateEmail(email);
+
+        if (validationEmail !== "Valid email.") {
+          error.style.display = "";
+          error.innerHTML = validationEmail;
+          return;
+        }
+        const phoneNumber = phoneInput.getNumber();
+
+        info.style.display = "none";
+        error.style.display = "none";
+        const data = new URLSearchParams();
+        data.append("phone", phoneNumber);
+
+        fetch("./lookup", {
+          method: "POST",
+          body: data,
+        })
+          .then((response) => response.json())
+          .then((json) => {
+            if (json.success) {
+              info.style.display = "";
+              info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+            } else {
+              console.error("Invalid phone number.");
+              error.style.display = "";
+              error.innerHTML = json.error;
+            }
+          })
+          .catch((err) => {
+            error.style.display = "";
+            error.innerHTML = `Invalid phone number.`;
+          });
+      }
+
+      const form = document.getElementById("lookup");
+      form.addEventListener("submit", process);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+    <script>
+      $(function () {
+        $("#slider-month").ionRangeSlider({
+          min: 1,
+          max: 12,
+          from: 1,
+          grid: true,
+          grid_num: 4,
+          prefix: "month",
+        });
+        $("#slider-money").ionRangeSlider({
+          min: 300,
+          max: 15000,
+          from: 2000,
+          grid: true,
+          grid_num: 4,
+          prefix: "€",
+        });
+      });
+    </script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

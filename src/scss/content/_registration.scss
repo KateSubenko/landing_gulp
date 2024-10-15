@@ -1,0 +1,97 @@
+@import "vars";
+
+.registration {
+  margin-top: 15rem;
+  &__p {
+    color: $red;
+    font-family: $font-Roboto;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+  }
+  &__block {
+    width: 100%;
+    height: 188px;
+    margin-top: 12rem;
+    background-color: #d9d9d9;
+  }
+  &__form {
+    background: white;
+    box-shadow: 0px 4px 19.3px 4px #00000030;
+    border-radius: 12px;
+    margin-top: 54px;
+    padding: 44px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    font-family: $font-Sans;
+    padding: 10px;
+    background-color: #f7f7f7;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  &__button--submit {
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-Sans;
+    font-size: 2rem;
+    color: white;
+    background-color: $red;
+  }
+}
+
+input::placeholder {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+@media (min-width: 840px) {
+  .registration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__form {
+      background: #4a4a4ad1;
+    }
+
+    &__p {
+      width: 46%;
+    }
+    &__back {
+      position: absolute;
+      z-index: -2;
+      top: 3rem;
+      right: 0;
+      width: 534px;
+      height: 493px;
+      background-image: url("../img/registration__back.png");
+    }
+  }
+  .registration__block--1 {
+    display: none;
+  }
+  .container {
+    width: 46%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    width: 42%;
+  }
+  .registration {
+    &__p {
+      width: 42%;
+    }
+    &__input {
+      padding: 1rem;
+    }
+  }
+}

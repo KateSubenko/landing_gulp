@@ -1,0 +1,220 @@
+@import "./vars";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+button,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+input,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 8px;
+}
+
+.registration__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.iti {
+  width: 100%;
+  padding: 0px 10px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  --iti-path-flags-1x: url("path/to/flags.webp");
+  --iti-path-flags-2x: url("path/to/flags@2x.webp");
+  --iti-path-globe-1x: url("path/to/globe.webp");
+  --iti-path-globe-2x: url("path/to/globe@2x.webp");
+}
+
+.iti-flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/img/flags.png");
+}
+
+.alert {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-info {
+  border-color: #bce8f1;
+  color: #31708f;
+  background-color: #d9edf7;
+}
+
+.alert-error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  margin: auto;
+  width: 90%;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (min-width: 840px) {
+  .content {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1100px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    margin: auto;
+    width: 1100px;
+  }
+}
+
+@import "content/header";
+@import "content/footer";
+@import "content/registration";
+@import "content/about_us";
+@import "content/ceo";
+@import "content/comments";
+@import "content/shareholders";

@@ -1,0 +1,35 @@
+@import "vars";
+
+.shareholders {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  &__title {
+    font-family: $font-Roboto;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5rem;
+  }
+  &__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--2 {
+      margin-top: 2rem;
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: 840px) {
+  .shareholders__list {
+    margin: auto;
+    margin-top: 4.5rem;
+    width: 60%;
+  }
+}
